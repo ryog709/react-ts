@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const TestTimer = () => {
+export const TestTimer = () => {
 	// useStateで状態管理
 	const [seconds, setSeconds] = useState(0); // タイマーの秒数
 	const [isRunning, setIsRunning] = useState(false); // タイマーが動いているかの状態
@@ -82,5 +82,3 @@ const TestTimer = () => {
 	);
 
 };
-
-export default TestTimer;
