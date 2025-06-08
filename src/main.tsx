@@ -1,7 +1,7 @@
 // 【StrictMode】→ Reactの厳格モード（バグを見つけやすくしてくれる機能）
 import { StrictMode } from 'react'
 
-// 【createRoot】→ React 18の新しい方法でアプリを画面に表示する機能
+// 【createRoot】→ Reactアプリを画面に表示する標準的な方法
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'  // メインのアプリコンポーネントを読み込み
 
