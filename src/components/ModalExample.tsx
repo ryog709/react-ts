@@ -3,7 +3,6 @@ import { Modal } from "./Modal";
 
 export const ModalExample = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalSize, setModalSize] = useState<"sm" | "md" | "lg">("md");
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -12,17 +11,6 @@ export const ModalExample = () => {
     <div className="modal-example">
       <h1>モーダルサンプル</h1>
       <div className="controls">
-        <label>
-          モーダルサイズ
-          <select
-            value={modalSize}
-            onChange={(e) => setModalSize(e.target.value as "sm" | "md" | "lg")}
-          >
-            <option value="sm">Small</option>
-            <option value="md">Medium</option>
-            <option value="lg">Large</option>
-          </select>
-        </label>
         <button onClick={openModal} className="open-button">
           モーダルを開く
         </button>
@@ -31,15 +19,14 @@ export const ModalExample = () => {
         isOpen={isModalOpen}
         onClose={closeModal}
         title="モーダルタイトル"
-        size={modalSize}
       >
         <div className="modal-content-example">
           <p>こんにちは！これはモーダルの中身だよ〜</p>
           <p>以下の方法でモーダルを閉じることができます：</p>
-          <ul>
-            <li>✕ ボタンをクリック</li>
-            <li>背景をクリック</li>
-            <li>Escキーを押す</li>
+          <ul className="modal-list">
+            <li className="modal-list-item">✕ ボタンをクリック</li>
+            <li className="modal-list-item">背景をクリック</li>
+            <li className="modal-list-item">Escキーを押す</li>
           </ul>
           <div className="modal-actions">
             <button

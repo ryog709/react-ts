@@ -6,7 +6,7 @@ interface ModalProps {
   onClose: () => void;
   children: ReactNode;
   title?: string;
-  size?: "sm" | "md" | "lg";
+
 }
 
 export const Modal = ({
@@ -14,7 +14,6 @@ export const Modal = ({
   onClose,
   children,
   title = "",
-  size = "md",
 }: ModalProps) => {
   useEffect(() => {
     const handleEscKey = (e: KeyboardEvent) => {
@@ -51,7 +50,7 @@ export const Modal = ({
       aria-modal="true"
       aria-labelledby={title ? "modal-title" : undefined}
     >
-      <div className={`modal-content ${size}`}>
+      <div className="modal-content">
         <div className="modal-header">
           {title && (
             <h2 id="modal-title" className="modal-title">
