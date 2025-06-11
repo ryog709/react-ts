@@ -55,7 +55,7 @@ export const TestTimer = () => {
 			<h2 className="timer-title">タイマー</h2>
 
 			<div className="timer-display">{formatTime(seconds)}</div>
-
+			
 			<div className="timer-buttons">
 				<button className={`timer-button ${isRunning ? 'stop' : 'start'}`} onClick={handleStartStop}>
 					{isRunning ? 'ストップ' : 'スタート'}
