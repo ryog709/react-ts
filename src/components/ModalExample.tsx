@@ -29,8 +29,12 @@ export const ModalExample = () => {
       >
         {/* ↓ここから下がModalコンポーネントの中に表示される内容 */}
         <div className="modal-content-example">
-          <p>こんにちは！これはモーダルの中身だよ</p>
-          <p>以下の方法でモーダルを閉じることができます</p>
+          <p className="modal-content-example__text">
+            こんにちは！これはモーダルの中身だよ
+          </p>
+          <p className="modal-content-example__text">
+            以下の方法でモーダルを閉じることができます
+          </p>
           {/* モーダルを閉じる方法のリスト */}
           <ul className="modal-list">
             <li className="modal-list-item">✕ ボタンをクリック</li>

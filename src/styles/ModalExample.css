@@ -36,12 +36,18 @@
     line-height: 1.6;
 }
 
+/* BEM: 子要素テキストを少し太字にする */
+.modal-content-example__text {
+    font-weight: 600;
+}
+
 .modal-list {
     text-align: left;
 }
 
 .modal-list-item {
     margin-top: 0.5rem;
+    font-weight: 600;
 }
 
 .modal-actions {
