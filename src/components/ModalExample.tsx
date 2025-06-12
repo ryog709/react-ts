@@ -14,7 +14,7 @@ export const ModalExample = () => {
   return (
     // モーダルサンプルの全体を囲むdiv
     <div className="modal-example">
-      <h1>モーダルサンプル</h1> {/* タイトル */}
+      <h1>モーダルサンプル</h1>
       <div className="controls">
         {/* このボタンをクリックするとモーダルが開く */}
         <button onClick={openModal} className="open-button">
