@@ -1,5 +1,6 @@
 import { useState } from "react"; // Reactのstateを使うために必要
 import { Modal } from "./Modal"; // 作ったばっかりのModalコンポーネントをここで使う
+import { SectionTitle } from "./SectionTitle";
 
 export const ModalExample = () => {
   // モーダルが開いてるか閉じてるかを管理するstate
@@ -14,7 +15,7 @@ export const ModalExample = () => {
   return (
     // モーダルサンプルの全体を囲むdiv
     <div className="modal-example">
-      <h1>モーダルサンプル</h1>
+      <SectionTitle level={2}>モーダルサンプル</SectionTitle>
       <div className="controls">
         {/* このボタンをクリックするとモーダルが開く */}
         <button onClick={openModal} className="open-button">
